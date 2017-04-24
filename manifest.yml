@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: BirdsongMobileApp
+  host: BirdsongMobileApp
+  disk_quota: 1024M
+  services:
+  - BirdsongMobileApp-AdvancedMobileAccess
+  - BirdsongMobileApp-imfpush
+  - BirdsongMobileApp-cloudantNoSQLDB
